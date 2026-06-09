@@ -32,10 +32,19 @@
 .header-inner { display: flex; align-items: baseline; gap: 10px; }
 
 .logo {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 4vw, 2rem);
   line-height: 1;
   color: var(--gold);
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.logo-trophy {
+  font-size: clamp(1rem, 3.5vw, 1.7rem);
+  flex-shrink: 0;
 }
 
 .logo-sub {

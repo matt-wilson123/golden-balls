@@ -75,7 +75,7 @@ export default function Home() {
       {/* Header */}
       <header className="app-header">
         <div className="header-inner">
-          <div className="logo display">🏆 GOLDEN BALLS 🏆</div>
+          <div className="logo display"><span className="logo-trophy">🏆</span> GOLDEN BALLS <span className="logo-trophy">🏆</span></div>
           <div className="logo-sub">World Cup Daily</div>
         </div>
         <div className="date-badge">{formatDate(date)}</div>
