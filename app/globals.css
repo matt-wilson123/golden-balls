@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pitch: #0d1f0f;
+  --pitch-mid: #132916;
+  --pitch-light: #1a3a1c;
+  --grass: #2d6a30;
+  --line: #3a8c3e;
+  --gold: #f5c842;
+  --gold-dim: #c9a030;
+  --red: #e63946;
+  --white: #f0f4f0;
+  --muted: #6b8c6d;
+  --correct: #3a8c3e;
+  --close: #c9a030;
+  --wrong: #1a3a1c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--pitch);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; }
+
+/* pitch texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0px,
+    transparent 48px,
+    rgba(255,255,255,0.012) 48px,
+    rgba(255,255,255,0.012) 96px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
