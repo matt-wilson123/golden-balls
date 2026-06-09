@@ -58,7 +58,7 @@ export function checkStatGuess(
 ): GuessResult {
   if (guess === answer) return 'correct';
   const pct = Math.abs(guess - answer) / answer;
-  if (pct <= 0.15) return 'close'; // within 15%
+  if (pct <= 0.25) return 'close'; // within 25%
   return 'wrong';
 }
 
